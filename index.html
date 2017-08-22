@@ -6,23 +6,27 @@
   </head>
   <body>
       <header class="header-menu">
-        <nav class="nav-menu">
           <a class="logo-menu" href="index.html">
                   <img src="img/logo.svg" alt="Логотип DEVICE">             
           </a>
           <form>
           <input type="search" name="search">
           </form>
+          
+        <nav class="nav-menu-up">
           <ul class="user-menu">
               <li class="user-login"><a href="#">Войти</a></li>
                   <li class="contrast"><a href="#">Сравнить</a></li>
                   <li class="basket"><a href="#">Корзина</a></li>
           </ul>
+        </nav>
+          
+        <nav class="nav-menu-down">
           <ul class="site-menu" >
                   <li><a href="catalog.html">Каталог товаров</a></li>
-                  <li><a href="delivery.html">Доставка</a></li>
-                  <li><a href="assurance.html">Гарантия</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
           </ul>
         </nav>          
       </header>
@@ -34,7 +38,7 @@
                <p class="product-info">Самая длинная палка для селфи доступна в нашем магазине
                   Восемь(Восемь,Карл!)метров длинной и весом всего 5 килограмм.</p>
                <p>
-                   <a href="#">Подробнее</a>
+                   <a class="a-link" href="#">Подробнее</a>
                    <a><img src="#"></a>
                </p>
                <table border="1px" border-color="black">
@@ -55,37 +59,38 @@
                <ul class="menu-category">
                    <li>
                        <img src="#">
-                       <p>Виртуальная реальность</p>
+                       <a>Виртуальная реальность</a>
                    </li>
                    <li>
                        <img src="#">
-                       <p>Моноподы для селфи</p>
+                       <a>Моноподы для селфи</a>
                    </li>
                   <li>
                        <img src="#">
-                       <p>Экшн-камеры</p>
+                       <a>Экшн-камеры</a>
                    </li>
                    <li>
                        <img src="#">
-                       <p>Фитнес-браслеты</p>
+                       <a>Фитнес-браслеты</a>
                    </li>
                    <li>
                        <img src="#">
-                       <p>Умные часы</p>
+                       <a>Умные часы</a>
                    </li>
                    <li>
                        <img src="#">
-                       <p>Квадракоптеры</p>
+                       <a>Квадракоптеры</a>
                    </li>
                </ul>
            </section>
           
            <section class="services">
                <ul class="services-menu">
-                   <li class="services-menu-active">Доставка</li>
-                   <li><a href="assurance.html">Гарантия</a></li>
-                   <li><a href="credit.html">Кредит</a></li>
+                   <li class="services-menu-active"><label><input type="button">Доставка</label></li>
+                   <li class="a-link"><label><input type="button">Гарантия</label></li>
+                   <li class="a-link"><label><input type="button">Кредит</label></li>
                </ul>
+               <div>
                <h1>Доставка</h1>
                <p>
                    Мы с удовольствием доставим ваш товар прямо к вашему
@@ -93,17 +98,19 @@
                    заработаем, поднимая его на ваш этаж.
                </p>
                <img src="#">
+               </div>
            </section>
           
            <section class="partners">
                <ul class="partners-menu">
-                   <li><a href="dji.html"><img="#"></a></li>
-                   <li><a href="sp-gadgets.html"><img="#"></a></li>
-                   <li><a href="gopro.html"><img="#"></a></li>
-                   <li><a href="vive.html"><img="#"></a></li>
+                   <li><a href="#"><img="#"></a></li>
+                   <li><a href="#"><img="#"></a></li>
+                   <li><a href="#"><img="#"></a></li>
+                   <li><a href="#"><img="#"></a></li>
                </ul>
            </section>
           
+          <section class="info">
            <section class="about-us">
                <h1>О нас</h1>
                <p>
@@ -119,7 +126,7 @@
                    <li>Автотрейдинг</li>
                    <li>ЖелДорЭкспедиция</li>
                </ul>
-               <a class="botton">Подробнее о нас</a>
+               <a class="botton a-link">Подробнее о нас</a>
            </section>
           
            <section class="contacts">
@@ -129,11 +136,13 @@
                    проверить работоспособность покупки. Всякое бывает.
                </p>
                <img src="#">
-               <a class="botton">Напишите нам</a>
+               <a class="botton a-link">Напишите нам</a>
            </section>
+          </section>
       </main>
       
       <footer class="footer">
+        <div class="footer-up">
           <a class="logo-menu" href="index.html">
                   <img src="img/logo.svg" alt="Логотип DEVICE">             
           </a>
@@ -142,6 +151,8 @@
                   <li class="contrast"><a href="#">Сравнить</a></li>
                   <li class="basket"><a href="#">Корзина</a></li>
           </ul>
+        </div>
+        <div class="footer-center">
           <p class="footer-address">
               г. Москва, ул. Строителей, 15
           </p>
@@ -155,6 +166,8 @@
           <p class="footer-phone">
               Тел: +7(495)495 95 95
           </p>
+        </div>
+        <div class="footer-down">
           <div class="footer-social">
               <ul>
                   <li><a class="soc-but" href="#">Вконтакте</a></li>
@@ -165,6 +178,7 @@
           <div class="footer-school">
               <a class="footer-school-but" href="#"><img src="#"></a>
           </div>
+      </div>
     </footer>
       
   </body>
