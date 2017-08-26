@@ -1,0 +1,22 @@
+body {
+    font-size: 15px;
+    line-height: 30px;
+    color:#464646;
+    font-family: "OpenSans", "Arial", sans-serif;
+    background-color: none;
+}
+
+h2 {
+    font-size: 47px;
+    line-height: auto;
+    font-family: "Gilroy", "Arial", sans-serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.menu-category a {
+    font-size: 18px;
+    font-family: "Gilroy", "Arial", sans-serif;
+    color: #000000;
+    font-weight: bold;
+}
