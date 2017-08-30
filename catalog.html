@@ -6,23 +6,27 @@
   </head>
   <body>
       <header class="header-menu">
-        <nav class="nav-menu">
           <a class="logo-menu" href="index.html">
-                  <img src="img/logo.svg" alt="Логотип DEVICE">             
+                  <img src="img/logo.png" alt="Логотип DEVICE">          
           </a>
           <form>
-          <input type="search" name="search">
+          <img src="img/search.svg" width="16" height="16" alt="Поиск"><input type="search" name="search" placeholder="Поиск по сайту">
           </form>
+                    
+        <nav class="nav-menu-up">
           <ul class="user-menu">
-              <li class="user-login"><a href="#">Войти</a></li>
-                  <li class="contrast"><a href="#">Сравнить</a></li>
-                  <li class="basket"><a href="#">Корзина</a></li>
+              <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход">Войти</a></li>
+              <li class="contrast"><a href="#"><img src="img/compare.svg" width="13" height="12" alt="Сравнить">Сравнить</a></li>
+              <li class="basket"><a href="#"><img src="img/basket.svg" width="13" height="12" alt="Корзина">Корзина</a></li>
           </ul>
+        </nav>
+          
+        <nav class="nav-menu-down">
           <ul class="site-menu" >
-                  <li><a href="catalog.html">Каталог товаров</a></li>
-                  <li><a href="delivery.html">Доставка</a></li>
-                  <li><a href="assurance.html">Гарантия</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
+                  <li><a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Товары"></a></li>
+                  <li><a href="#">Доставка</a></li>
+                  <li><a href="#">Гарантия</a></li>
+                  <li><a href="#">Контакты</a></li>
           </ul>
         </nav>          
       </header>
@@ -36,9 +40,10 @@
           </ul>
            <section class="filter">
                <h2>Фильтр:</h2>
-                   <form class="filter">
+                   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                      <fieldset>
                       <legend>Стимость</legend>
+                         <input type="range" min="1" max="5000" step="1">
                      </fieldset>
                      <fieldset>
                       <legend>Цвет</legend>
@@ -64,10 +69,10 @@
                       <legend>Bluetooth</legend>
                         <ul>
                          <li class="filter-option">
-                            <input class="filter-radio" type="radio" name="bluetooth" value="Есть" checked>Есть
+                            <label><input class="filter-radio" type="radio" name="bluetooth" value="Есть" checked>Есть</label>
                          </li>
                          <li class="filter-option">
-                            <input class="filter-radio" type="radio" name="bluetooth" value="Нет">Нет
+                            <label><input class="filter-radio" type="radio" name="bluetooth" value="Нет">Нет</label>
                          </li>
                         </ul>
                     </fieldset>
@@ -76,16 +81,18 @@
              </section>
 
              <section class="catalog">
+                <div class="sort-option">
                  <h2>Сортировка:</h2>
-                        <ul class="sort-option">
-                         <li>Есть</li>
-                         <li>Есть</li>
-                         <li>Есть</li>                          
+                        <ul class="filter-sort-option">
+                         <li><a href="#">По цене</a></li>
+                         <li><a href="#">По типу</a></li>
+                         <li><a href="#">По популярности</a></li>                          
                         </ul>
                         <ul>
-                         <li><-/</li>
-                         <li>/-></li>  
+                         <li><a href="#"><img src="img/icon-up-dir.svg" alt="up"></a></li>
+                         <li><a href="#"><img src="img/icon-down-dir.svg" alt="down"></a></li>  
                         </ul>
+                 </div>
            
                 <ul class="catalog-list">
                  <li class="catalog-item">
@@ -146,26 +153,29 @@
                 </ul>
 
               <p class="nav-list">
-                <a class="next-list">Назад</a>
+                <a class="next-list" href="#">Назад</a>
                 <ul class="number-list">
                   <li class="next-list-item">1</li>
                   <li><a href="#">2</a></li>
                   <li><a href="#">3</a></li>
                 </ul>
-                <a class="prev-list">Вперед</a>
+                <a class="prev-list" href="#">Вперед</a>
               </p>
              </section>
       </main>
       
-      <footer class="footer">
+     <footer class="footer">
+        <div class="footer-up">
           <a class="logo-menu" href="index.html">
-                  <img src="img/logo.svg" alt="Логотип DEVICE">             
+                  <img src="img/logo-yellow.png" alt="Логотип DEVICE">             
           </a>
           <ul class="user-menu">
-              <li class="user-login"><a href="#">Войти</a></li>
-                  <li class="contrast"><a href="#">Сравнить</a></li>
-                  <li class="basket"><a href="#">Корзина</a></li>
+              <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход">Войти</a></li>
+              <li class="contrast"><a href="#"><img src="img/compare.svg" width="13" height="12" alt="Сравнить">Сравнить</a></li>
+              <li class="basket"><a href="#"><img src="img/basket.svg" width="13" height="12" alt="Корзина">Корзина</a></li>
           </ul>
+        </div>
+        <div class="footer-center">
           <p class="footer-address">
               г. Москва, ул. Строителей, 15
           </p>
@@ -179,17 +189,21 @@
           <p class="footer-phone">
               Тел: +7(495)495 95 95
           </p>
+        </div>
+        <div class="footer-down">
           <div class="footer-social">
               <ul>
-                  <li><a class="soc-but" href="#">Вконтакте</a></li>
-                  <li><a class="soc-but" href="#">Фейсбук</a></li>
-                  <li><a class="soc-but" href="#">Инстаграм</a></li>
+                  <li><a class="soc-but" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a></li>
+                  <li><a class="soc-but" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+                  <li><a class="soc-but" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
               </ul>
           </div>
           <div class="footer-school">
-              <a class="footer-school-but" href="#"><img src="#"></a>
+              <a class="footer-school-but" href="#"><img src="img/logo-academy.svg"></a>
           </div>
+      </div>
     </footer>
+      
       
   </body>
 </html>
