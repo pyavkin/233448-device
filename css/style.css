@@ -1,22 +1,228 @@
 body {
     font-size: 15px;
     line-height: 30px;
-    color:#464646;
-    font-family: "OpenSans", "Arial", sans-serif;
+    color:#000000;
+    font-family: "Gilroyextrabold", "Arial", sans-serif;
     background-color: none;
+    font-weight: 700; 
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;   
+}
+
+li {
+    list-style:none; 
+}
+
+.main-navigation {
+    background-color:#f7e296;
+}
+
+.header-menu a {
+    color:#000000;
+}
+
+.logo-menu {
+    font-size: 48px;
+    line-height: auto;
+}
+
+a:hover.logo-menu {
+    opacity: 0.6;
+}
+
+a:active.logo-menu {
+    opacity: 0.3;
+}
+
+.user-menu a {
+    font-family: "Open Sans";
+    font-size: 15px;
+    line-height: 36px;    
+}
+
+.site-menu a {
+    font-size: 18px;
+    line-height: auto;
+    text-transform: uppercase;
+    letter-spacing:4px;
+}
+
+.user-menu a:hover,
+.site-menu a:hover,
+.footer-school-but:hover {
+   opacity: 0.6;
+}
+
+.user-menu a:active,
+.site-menu a:active,
+.footer-school-but:active {
+    opacity: 0.3;
+}
+
+
+
+.promo-namber {
+    font-size: 179.2px;
+    line-height: 179.2px;
+    color: #b5af97;
+}
+
+h1 {
+    font-size: 47px;
+    line-height: auto;
+}
+
+.text-info {
+    font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans";
+    font-weight: normal; 
+    color: #464646;
+}
+
+.a-link {
+    font-size: 18px;
+    line-height: auto;
+    text-transform: uppercase;
+    letter-spacing:4px;
+    color: #000000; 
+}
+
+.a-link:hover {
+    background-color: #f0c52e;
+}
+
+.a-link:active {
+    color: rgba(0 , 0 , 0 , 0.3);
+}
+
+
+table {
+    text-align: left;
+}
+
+.row-up {
+    font-size: 36px;
+    line-height: auto;
+    font-family: "Gilroylight";
+    font-weight: normal; 
+}
+
+.row-down {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "Open Sans";  
+    font-weight: normal; 
+}
+
+.menu-category li {
+    width:160px;
+    height:160px;
+    background-color: #f7e296;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.catalog-category {
+    font-size: 18px;
+    line-height: auto;
+    color: #000000;
+}
+
+.menu-category li:hover{
+    background-color: #f0c52e;
+}
+
+.menu-category li:active p,
+.menu-category li:active span {
+    background-color: #f0c52e;
+    opacity: 0.3;
+    color: rgba(0 , 0 , 0 , 0.3);
+}
+
+.services {
+	background-color: #e5e5e5;  
+}
+
+.vertical-line {
+	border-right:4px solid #000000;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing:4px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  width:160px;
+  height:40px;
+  border: none;
+}
+
+.button:hover {    
+  background-color: #f0c52e;  
+}
+
+.button:active {  
+  text-align: left;
+  color: #f7e184;  
+  padding-left:20px;  
+  background-color: #000000;  
+  width:278px;  
 }
 
 h2 {
-    font-size: 47px;
-    line-height: auto;
-    font-family: "Gilroy", "Arial", sans-serif;
-    font-weight: bold;
-    color: #000000;
+	font-size:47px;
 }
 
-.menu-category a {
-    font-size: 18px;
-    font-family: "Gilroy", "Arial", sans-serif;
-    color: #000000;
-    font-weight: bold;
+
+.partners-menu img {
+	opacity: 0.20;	
+	filter: grayscale(100%);
 }
+
+.partners-menu img:hover {
+	opacity: 1;	
+	filter: grayscale(0);
+}
+
+.yellow-logo {color:#ffc600;}
+
+.footer {
+	background-color: #464646;
+}
+
+.footer-center,
+.user-menu-footer a,
+.site-menu-footer a {
+	color: #ffffff;
+}
+
+.footer-address,
+.footer-phone {
+	font-size: 15px;
+    line-height: 30px;
+    font-family: "Open Sans";  
+    font-weight: normal; 
+}
+
+.user-menu-footer a,
+.footer-social li {
+   opacity: 0.6;
+}
+
+.user-menu-footer a:hover,
+.footer-social li:hover {
+   opacity: 1;
+}
+
+.user-menu a:active,
+.footer-social li:active {
+    opacity: 0.3;
