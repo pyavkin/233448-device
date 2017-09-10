@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: DEVICE</title>
+    <style>
+        @font-face {
+            font-family: "Gilroyextrabold";
+            src: url("fonts/gilroyextrabold-webfont.woff2"); 
+                   }  
+        @font-face {
+            font-family: "Gilroylight";
+            src: url("fonts/gilroylight-webfont.woff2"); 
+                   }   
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
+  </head>
+    
+  <body>
+      <header class="header-menu">
+        <nav class="main-navigation">  
+          <a class="logo-menu"</a>
+          <form>
+          <input type="search" name="search">
+          </form>                    
+          <ul class="user-menu user-menu-heder"></ul>          
+          <ul class="site-menu site-menu-header"></ul>
+        </nav>          
+      </header>
+      
+      <main class="contant">
+	  
+           <section class="promo">
+               <div class="product-photo"></div>
+               <div class="product-contant"></div>
+           </section>
+          
+           <section class="category">
+               <ul class="menu-category">
+                   <li class="cell-01"></li>
+                   <li class="cell-02"></li>
+				   <li class="cell-03"></li>
+				   <li class="cell-04"></li>
+				   <li class="cell-05"></li>
+				   <li class="cell-06"></li>
+               </ul>
+           </section>
+          
+           <section class="services">
+               <div class="services-vertical-line"></div>
+               <div class="services-info"></div>
+           </section>
+          
+           <section class="partners">
+               <ul class="partners-menu">			   
+                   <li class="img-dji"></li>
+                   <li class="img-spgadegets"></li>
+                   <li class="img-gopro"></li>
+                   <li class="img-vive"></li>
+               </ul>
+           </section>
+          
+          <section class="info">
+           <div class="about-us"></div>          
+           <div class="contacts"></div>
+          </section>
+		  
+      </main>
+      
+      <footer class="footer">
+        <div class="footer-up">
+		  <a class="logo-menu yellow-logo"></a>          
+          <ul class="user-menu user-menu-footer"></ul>
+        </div>
+        <div class="footer-center">
+          <p class="footer-address"></p>
+          <p class="footer-menu"></p>
+          <p class="footer-phone"></p>
+        </div>
+        <div class="footer-down">
+          <div class="footer-social"></div>
+          <div class="footer-school"></div>
+      </div>
+    </footer>
+      
+  </body>
+</html>

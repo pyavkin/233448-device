@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: DEVICE</title>
+    <style>
+        @font-face {
+            font-family: "Gilroyextrabold";
+            src: url("fonts/gilroyextrabold-webfont.woff2"); 
+                   }  
+        @font-face {
+            font-family: "Gilroylight";
+            src: url("fonts/gilroylight-webfont.woff2"); 
+                   }   
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-      <header class="header-menu">
-          <a class="logo-menu" href="index.html">
-                  <img src="img/logo.png" alt="Логотип DEVICE">          
-          </a>
+       <header class="header-menu">
+        <nav class="main-navigation">  
+          <a class="logo-menu" href="index.html">DEVICE</a>
           <form>
           <img src="img/search.svg" width="16" height="16" alt="Поиск"><input type="search" name="search" placeholder="Поиск по сайту">
           </form>
                     
-        <nav class="nav-menu-up">
-          <ul class="user-menu">
-              <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход">Войти</a></li>
-              <li class="contrast"><a href="#"><img src="img/compare.svg" width="13" height="12" alt="Сравнить">Сравнить</a></li>
-              <li class="basket"><a href="#"><img src="img/basket.svg" width="13" height="12" alt="Корзина">Корзина</a></li>
+          <ul class="user-menu user-menu-heder">
+              <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход"> Войти</a></li>
+              <li class="contrast"><a href="#"><img src="img/compare.svg" width="13" height="12" alt="Сравнить"> Сравнить</a></li>
+              <li class="basket"><a href="#"><img src="img/basket.svg" width="13" height="12" alt="Корзина"> Корзина</a></li>
           </ul>
-        </nav>
           
-        <nav class="nav-menu-down">
-          <ul class="site-menu" >
+          <ul class="site-menu site-menu-header" >
                   <li><a href="catalog.html">Каталог товаров<img src="img/plus.svg" width="16" height="16" alt="Товары"></a></li>
                   <li><a href="#">Доставка</a></li>
                   <li><a href="#">Гарантия</a></li>
@@ -164,15 +173,14 @@
              </section>
       </main>
       
-     <footer class="footer">
+      <footer class="footer">
         <div class="footer-up">
-          <a class="logo-menu" href="index.html">
-                  <img src="img/logo-yellow.png" alt="Логотип DEVICE">             
-          </a>
-          <ul class="user-menu">
-              <li class="user-login"><a href="#"><img src="img/user.svg" width="13" height="12" alt="Вход">Войти</a></li>
-              <li class="contrast"><a href="#"><img src="img/compare.svg" width="13" height="12" alt="Сравнить">Сравнить</a></li>
-              <li class="basket"><a href="#"><img src="img/basket.svg" width="13" height="12" alt="Корзина">Корзина</a></li>
+		 <a class="logo-menu yellow-logo" href="index.html">DEVICE</a>
+          
+          <ul class="user-menu user-menu-footer">
+              <li class="user-login"><a href="#"><img class="user-menu-yellow" src="img/user.svg" width="13" height="12" alt="Вход"> Войти</a></li>
+              <li class="contrast"><a href="#"><img class="user-menu-yellow" src="img/compare.svg" width="13" height="12" alt="Сравнить"> Сравнить</a></li>
+              <li class="basket"><a href="#"><img class="user-menu-yellow" src="img/basket.svg" width="13" height="12" alt="Корзина"> Корзина</a></li>
           </ul>
         </div>
         <div class="footer-center">
@@ -180,7 +188,7 @@
               г. Москва, ул. Строителей, 15
           </p>
           <p class="footer-menu">
-              <ul class="footer-menu-site" >
+              <ul class="site-menu site-menu-footer" >
                   <li><a href="delivery.html">Доставка</a></li>
                   <li><a href="assurance.html">Гарантия</a></li>
                   <li><a href="contacts.html">Контакты</a></li>

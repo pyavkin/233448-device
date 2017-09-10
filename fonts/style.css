@@ -1,4 +1,4 @@
-﻿
+/*
 body {
     font-size: 15px;
     line-height: 30px;
@@ -11,9 +11,7 @@ body {
 }
 
 a {
-    text-decoration: none;  
-    margin: 0;
-    padding: 0;
+    text-decoration: none;   
 }
 
 li {
@@ -41,34 +39,32 @@ a:active.logo-menu {
     opacity: 0.3;
 }
 
-.user-menu-header a {
+.user-menu a {
     font-family: "Open Sans";
     font-size: 15px;
     line-height: 36px;    
 }
 
-.site-menu-header a {
+.site-menu a {
     font-size: 18px;
     line-height: auto;
     text-transform: uppercase;
-    letter-spacing:3.5px;
+    letter-spacing:4px;
 }
 
-.user-menu-header a:hover,
-.site-menu-header a:hover,
+.user-menu a:hover,
+.site-menu a:hover,
 .footer-school-but:hover {
    opacity: 0.6;
 }
 
-.user-menu-header a:active,
-.site-menu-header a:active,
+.user-menu a:active,
+.site-menu a:active,
 .footer-school-but:active {
     opacity: 0.3;
 }
 
-li {display:inline;}
 
-/*
 
 .promo-namber {
     font-size: 179.2px;
@@ -236,138 +232,14 @@ h2 {
     opacity: 0.3;
 }
 */
-
 /* ----- Сеточные стили ----- */
 
-html,
-body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
+
 
 body {
-  /* Временно для сетки 
-  background-image: url('../img/device-index.jpg') ;
-  background-size: 1440px auto;
-  background-repeat: no-repeat;*/
-  
-}
-
-.img1 {
-    position:absolute;
-    opacity: 0.2;
-    background-size: 1440px auto;
-    background-repeat: no-repeat;
-    z-index: 0;
-}
-
-.header-menu {    
-    /* сдвиг */
-    position: absolute;
-    left:140px;
-    /* ------- */
-    
-    width: 1160px;
-    margin: 0 auto;
-    /* Временно для сетки */
-    min-height: 228px;  
-    opacity: 0.3;
-    
-}
-
- .main-navigation {
-    display: flex;
-     flex-direction: column;
-     align-items: center;
-     position: relative;
-     top: 40px; 
-     
-    /* Временно для сетки */
-    min-height: 188px;
-    
-     background: #f7e296;
-}
-
-.logo-menu {
-    position: absolute;
-    top: -15px;
-    left: 59px;
-    
-    min-width: 164px;
-    min-height: 36px;
-    
-   
-    
-    
-     margin: 0;
-    padding: 0;
-    
-}
-
-.user-menu-header {
-    display: flex;
-    justify-content: space-between;
-    width: 1040px; 
-    list-style: none;
-    min-height: 17px;    
-    
-    margin-top: 40px;
-    margin-bottom: 33px;
-}
-
-
-
-.site-menu-header {
-     display: flex;
-    justify-content: space-between;
-     width: 1040px;       
-     list-style: none;    
-     min-height: 17px;
-     
-}
-
-.left-menu-header {
-    width: 540px; 
-    list-style: none;
-    min-height: 17px;    
-    
-    margin: 0;
-    padding: 0;
-}
-
-.right-menu-header {
-    width: 220px; 
-    list-style: none;
-    min-height: 17px;    
-   
-    margin: 0;
-    padding: 0;
-
-}
-
-.center-menu-header {
-    width: 280px; 
-    list-style: none;
-    min-height: 17px;    
-   
-    margin: 0;
-    padding: 0;
-}
-.guaranty {margin-left: 32px;}
-.user-login {margin-left: 10px;}
-.contrast {margin-left: 10px;}
-.basket img{margin-left: 40px;}
-.contacts-header {margin-left: 100px;}
-
-.content {    
-    /* сдвиг */
-    position: absolute;
-    left:140px;
-    /* ------- */
-    
-    width: 1160px;
-    margin: 0 auto;
-    /* Временно для сетки */
-    min-height: 228px;    
-    
+  background-color: #FCF8F7;
+height: 120px;
+background-image: url(https://html5book.ru/images/flower112.png);
+background-position: left bottom;
+background-repeat: repeat-x;
 }
